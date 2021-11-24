@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h2>Konversi Suhu</h2>
+
+    <div class="form-group">
+        <label for="temprature">Masukkan Suhu: </label>
+        <input type="number" class="form-control" 
+        name="temptature" id="temprature" placeholder="Masukkan Suhu">
+    </div>
+    <br>
+    <div class="form-group">
+        <label for="from">Konversi Dari :</label>
+        <select class="form-control" name="from" id="from">
+            <option value="Celcius">Celcius</option>
+            <option value="Fahrenheit">Fahrenheit</option>
+            <option value="Kelvin">Kelvin</option>
+            <option value="Reamur">Reamur</option>
+        </select>
+    </div>
+    <br>
+    <div class="form-group">
+        <label for="to">Konversi Ke :</label>
+        <select class="form-control" name="to" id="to">
+            <option value="Celcius">Celcius</option>
+            <option value="Fahrenheit">Fahrenheit</option>
+            <option value="Kelvin">Kelvin</option>
+            <option value="Reamur">Reamur</option>
+        </select>
+    </div>
+    <br>
+    <button type="button" class="btn btn-primary btn-block" 
+    onclick="konversiSuhu()">Konversikan</button>
+    <br><br>
+    <div class="form-group mt-3">
+        <label for="result" id="resultlabel">Hasil: </label>
+        <input type="number" class="form-control" name="result" id="result">
+    </div>
+
+    <script type="text/javascript" src="konversi.js"></script>
+</body>
+</html>
